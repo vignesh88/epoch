@@ -25,7 +25,7 @@ SECRET_KEY = 'gpot9-ld6v6+!v88eqvs_lgr8ha@b1vi94d_q9sx9gx5@s4rvi'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'www.vikki.in']
+ALLOWED_HOSTS = ['localhost', '*']
 
 
 # Application definition
