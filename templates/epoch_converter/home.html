@@ -1,0 +1,48 @@
+{% load static %} {% load extra %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="refresh" content="300">
+    <meta name="viewport" content="width=device-width,initial-scale=1">{% if var_comments_page == "True" %}
+    <meta name="keywords"
+        content="epoch,epoch to date,date to epoch,online epoch,unix timestamp converter,unixtime,online epoch converter">
+    <meta name="description"
+        content="Simple online tool for converting Epoch to Date and Date to Epoch in any timezone using python libraries">
+    <title>Comments and Questions - www.epochtodate.com</title>{% elif var_epoch_faq_page == "True" %}
+    <meta name="keywords"
+        content="epoch,epoch to date,date to epoch,online epoch,unix timestamp converter,unixtime,online epoch converter">
+    <meta name="description"
+        content="Simple online tool for converting Epoch to Date and Date to Epoch in any timezone using python libraries">
+    <title>Epoch to Date and Date to Epoch Converter</title>{% elif var_simple_e2d_page == "True" %}
+    <meta name="keywords" content="epoch to date,epoch converter,online epoch converter,unix timestamp converter">
+    <meta name="description"
+        content="Convert Epoch to human readable Date/time. This also supports conversion in any timezone. This tool uses python pytz and datetime libraries for conversion and runs on serverside.">
+    <title>Epoch to Date Converter</title>{% elif var_simple_d2e_page == "True" %}
+    <meta name="keywords" content="date to epoch,epoch converter,online epoch converter,unix timestamp converter">
+    <meta name="description"
+        content="Convert human readable Date/time to Epoch. This also support the conversion in any timezone. This tool uses python pytz and datetime libraries for conversion and runs on serverside.">
+    <title>Date to Epoch Converter</title>{% else %}
+    <meta name="keywords"
+        content="epoch,epoch to date,date to epoch,online epoch,unix timestamp converter,unixtime,online epoch converter">
+    <meta name="description"
+        content="Simple online tool for converting Epoch to Date and Date to Epoch in any timezone using python libraries">
+    <title>Epoch to Date and Date to Epoch Converter</title>{% endif %}
+    <meta name="author" content="vignesh ragupathy">
+    <link href="{% static 'epoch/images/favicon.ico' %}" rel="shortcut icon" type="image/png">
+    <script src="{% static 'epoch/jquery/jquery-3.2.1.min.js' %}"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+
+<body>{% include 'epoch_converter/home_header.html' %}</body>
+<footer>
+    <center><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License"
+                style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a><br>This work is
+        licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons
+            Attribution-ShareAlike 4.0 International License</a>.</center>
+</footer>
+
+</html>

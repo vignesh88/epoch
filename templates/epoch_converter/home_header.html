@@ -1,0 +1,43 @@
+{% load static %}
+<link href="{% static 'epoch/css/epoch_iobox.css' %}" rel="stylesheet">
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header"><a class="navbar-brand" href="#menu-toggle" id="menu-toggle"><span
+                    class="glyphicon glyphicon-list" aria-hidden="true"></span></a></div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a id="running_epoch"></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div id="wrapper" class="toggled">
+    <div class="container-fluid">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><br></li>
+                <li><a href="/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+                <li><a href="comments"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                        Comments</a></li>
+                <li><a href="epoch_faq.html"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> FAQ</a>
+                </li>
+                <li><a href="simple_epochtodate.html"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+                        Epoch to Date</a></li>
+                <li><a href="simple_datetoepoch.html"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+                        Date to Epoch</a></li>
+            </ul>
+        </div><!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row"><br><br><br><br>{% if var_comments_page == "True" %}
+                    {% include 'epoch_converter/comments.html' %} {% elif var_epoch_faq_page == "True" %}
+                    {% include 'epoch_converter/epoch_faq.html' %} {% elif var_simple_e2d_page == "True" %}
+                    {% include 'epoch_converter/simple_epochtodate.html' %} {% elif var_simple_d2e_page == "True" %}
+                    {% include 'epoch_converter/simple_datetoepoch.html' %} {% else %}
+                    {% include 'epoch_converter/home_body.html' %} {% endif %}</div>
+            </div>
+        </div><!-- /#page-content-wrapper -->
+    </div>
+</div><!-- /#wrapper -->

@@ -1,0 +1,17 @@
+{% load static %}
+<link href="{% static 'epoch/css/epoch_header.css' %}" rel="stylesheet">
+<script src="{% static 'epoch/jquery/epoch_header.js' %}"></script>
+<link href="{% static 'epoch/css/bootstrap.min.css' %}" rel="stylesheet">
+<script type="text/javascript">
+    window.onload = startTime()
+</script>
+<div id="disqus_thread"></div>
+<script>
+    (function () {
+        var t = document,
+            e = t.createElement("script");
+        e.src = "https://epochtodate.disqus.com/embed.js", e.setAttribute("data-timestamp", +new Date), (t.head || t
+            .body).appendChild(e)
+    })()
+</script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript"
+        rel="nofollow">comments powered by Disqus.</a></noscript>

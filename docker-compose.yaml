@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  epoch:
+    image: vignesh88/epoch_converter
+    command: python epoch/manage.py runserver 0.0.0.0:8002
+    ports:
+      - "8002:8002"
+

@@ -1,0 +1,45 @@
+{% load static %}<script src="{% static 'epoch/jquery/moment.min.js' %}"></script>
+<script src="{% static 'epoch/jquery/moment-timezone-with-data-2012-2022.js' %}"></script>
+<script src="{% static 'epoch/jquery/chosen.jquery.js' %}"></script>
+<script src="{% static 'epoch/jquery/jstz.min.js' %}"></script>
+<link href="{% static 'epoch/css/bootstrap-datetimepicker.min.css' %}" rel="stylesheet">
+<script src="{% static 'epoch/jquery/bootstrap-datetimepicker.min.js' %}"></script>
+<link href="{% static 'epoch/css/epoch_header.css' %}" rel="stylesheet">
+<script src="{% static 'epoch/jquery/epoch_v1.js' %}"></script>
+<script src="{% static 'epoch/jquery/epoch_header.js' %}"></script>
+<script src="{% static 'epoch/jquery/bootstrap.min.js' %}"></script>
+<link href="{% static 'epoch/css/bootstrap.min.css' %}" rel="stylesheet">
+<link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
+<script type="text/javascript">
+        window.onload = startTime()
+</script>
+<div class="container-fluid">
+        <center>
+                <h1>Date to Epoch converter</h1>
+        </center>
+        <div class="form-group">
+                <div class="col-md-3"><input class="textbox form-control" type="text" id="datetimepicker1"
+                                name="datetimepicker1"></div>
+        </div>
+        <div class="form-group">
+                <div class="col-md-3"><select class="form-control selectpicker" data-live-search="true"
+                                id="dropdown_selector_date" onchange="process_epoch_test()"></select></div>
+        </div>
+        <div class="form-group">
+                <div class="col-md-4 col-lg-6">
+                        <same class="form-control output_textbox" id="output_date_1"></same>
+                </div>
+        </div>
+</div><br>
+<div id="note"><span style="float:left">Note : All onload values are based on time setting on your computer and all the
+                conversions are based on server side ajax call using python datetime function.</span></div><br><br><br>
+<div class="container-fluid">
+        <center>
+                <h4><a href="https://tools.vikki.in/epoch.html">Convert Epoch to Date</a></h4>
+        </center>
+</div><br><br><br>
+<script type="text/javascript">
+        onload_epoch()
+</script>

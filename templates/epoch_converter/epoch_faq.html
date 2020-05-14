@@ -1,0 +1,17 @@
+{% load static %}
+<link href="{% static 'epoch/css/epoch_header.css' %}" rel="stylesheet">
+<script src="{% static 'epoch/jquery/epoch_header.js' %}"></script>
+<link href="{% static 'epoch/css/bootstrap.min.css' %}" rel="stylesheet">
+<h2>What is unix epoch ?</h2>
+<p>The Unix epoch starts at 1 January 1970. The value of Unix time number is zero at the Unix epoch, and is increases by
+        exactly 86,400 per day since the epoch. Because Unix time is based on the Unix epoch, it is sometimes referred
+        to as "epoch time".</p>
+<h2>What is Leap seconds ?</h2>
+<p>Leap seconds are the time in seconds added to the UTC to keep the system clock in sync with mean solar time</p>
+<h2>How Unix epoch handles leap seconds ?</h2>
+<p>Unix epoch cannot represent leap seconds. During leap second, the UTC day is not exactly 86,400 seconds long. So the
+        OS has to slow down the clock to accomadate the leap second. Slowing down of OS clock can be achieved by
+        repeating the 60th seconds.Hence the unix epoch for a day is always 86,400 seconds.</p>
+<h2>what is year 2038 problem ?</h2>
+<p>Unix epoch is caluculated as a signed 32-bit interger and has a maximum value of 2,147,483,647. This maximum value
+        reaches on 03:14:07 UTC on 19 January 2038 and after which the unix epoch cannot encode time</p>
