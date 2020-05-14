@@ -1,4 +1,5 @@
 # Epoch converter
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/vignesh88/epoch) ![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/vignesh88/epoch)
 ![epoch](screenshot_epoch.png)
 
 ## Installation
