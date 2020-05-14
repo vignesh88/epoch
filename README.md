@@ -1,5 +1,5 @@
 # Epoch converter
-![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/vignesh88/epoch) ![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/vignesh88/epoch)
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/vignesh88/epoch) ![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/vignesh88/epoch) ![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/vignesh88/epoch) ![Docker Pulls](https://img.shields.io/docker/pulls/vignesh88/epoch) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/vignesh88/epoch) ![GitHub language count](https://img.shields.io/github/languages/count/vignesh88/epoch) ![GitHub top language](https://img.shields.io/github/languages/top/vignesh88/epoch) ![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/vignesh88/epoch)
 ![epoch](screenshot_epoch.png)
 
 ## Installation
